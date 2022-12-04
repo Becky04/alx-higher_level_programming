@@ -3,9 +3,9 @@
 
 def print_reversed_list_integer(my_list=[]):
     """
-    A function that prints all integers of a list, in reverse order
+    prints the reverse of a given list
     """
-    if my_list == None:
-        return None
-    for i in my_list[::-1]:
-        print("{:d}".format(i))
+    if type(my_list) is list:
+        my_list.reverse()
+        for i in my_list:
+            print("{:d}".format(i))
